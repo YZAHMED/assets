@@ -27,7 +27,7 @@
     }
   },
   {
-    "id": "projectssl",
+    "id": "projectssl-2",
     "title": "ProjectSSL — X.509 Encryption & Serverless Crypto APIs",
     "summary": "Practical PKI demo with self-signed X.509 (CA + server) and RSA-OAEP encrypt/decrypt APIs deployed on Netlify Functions.",
     "description": "ProjectSSL showcases real-world cryptography and deployment: it generates a self-signed Certificate Authority and server certificate (X.509), exposes RSA-OAEP encryption/decryption endpoints, and runs as serverless functions on Netlify. The project handles ESM vs CJS nuances, bundles PEM files to avoid Lambda env-size limits, and routes /api/* via netlify.toml.",
