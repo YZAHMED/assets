@@ -1,0 +1,29 @@
+[
+  {
+    "id": "projectssl",
+    "title": "ProjectSSL — X.509 Encryption & Serverless Crypto APIs",
+    "summary": "Practical PKI demo with self-signed X.509 (CA + server) and RSA-OAEP encrypt/decrypt APIs deployed on Netlify Functions.",
+    "description": "ProjectSSL showcases real-world cryptography and deployment: it generates a self-signed Certificate Authority and server certificate (X.509), exposes RSA-OAEP encryption/decryption endpoints, and runs as serverless functions on Netlify. The project handles ESM vs CJS nuances, bundles PEM files to avoid Lambda env-size limits, and routes /api/* via netlify.toml.",
+    "tags": ["Node.js", "Security", "Cryptography", "Serverless", "DevOps"],
+    "stack": ["Node.js (ESM)", "Express", "Netlify Functions", "node-forge", "OpenSSL", "Docker", "Kubernetes"],
+    "role": "Full-Stack Developer & Security Engineer",
+    "links": {
+      "live": "https://projectssl.netlify.app/",
+      "repo": "https://github.com/YZAHMED/X.509-Encryption-SSL"
+    },
+    "highlights": [
+      "Generated self-signed CA and server X.509 certificates; demonstrated certificate chaining.",
+      "Implemented RSA-OAEP encryption/decryption APIs with node-forge and Base64 transport.",
+      "Deployed serverless endpoints on Netlify Functions with /api/* rewrites defined in netlify.toml.",
+      "Bypassed AWS Lambda 4KB env limit by bundling PEM files with functions (included_files).",
+      "Robust path resolution compatible with both ESM and bundled CJS (import.meta.url fallback).",
+      "Local HTTPS support using the generated certs; separate static hosting + serverless API."
+    ],
+    "images": {
+      "src": "../../public/images/X509.png",
+      "alt": "ProjectSSL X.509 Encryption Demo",
+      "width": 800,
+      "height": 500
+    }
+  }
+]
